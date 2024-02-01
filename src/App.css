@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Overpass", sans-serif;
+}
 
 :root {
   --Light-red: #ff525d;
@@ -51,6 +57,11 @@
 
 button {
   @apply cursor-pointer;
+  font-family: "Ubuntu", sans-serif;
+}
+
+ul li {
+  font-family: "Ubuntu", sans-serif;
 }
 
 img {

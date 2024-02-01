@@ -8,7 +8,7 @@ export function Header() {
   };
 
   return (
-    <header className="sticky flex w-full items-center justify-between px-8 py-10 lg:justify-start lg:px-20 lg:py-6 ">
+    <header className="sticky flex w-full items-center justify-between px-8 py-10 lg:justify-start lg:px-32 lg:py-6 ">
       <img className="w-20" src="./images/logo.svg" alt="" />
 
       <nav

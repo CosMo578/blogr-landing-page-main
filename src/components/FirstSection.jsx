@@ -1,6 +1,6 @@
 export function FirstSection() {
   return (
-    <section className="py-20 lg:mb-48 lg:mt-24">
+    <section className="overflow-x-hidden py-20 lg:mb-48 lg:mt-24">
       <h2 className="mb-20 text-center text-3xl font-semibold text-[#1f3f5b]">
         Designed for the future
       </h2>

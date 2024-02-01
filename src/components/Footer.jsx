@@ -1,9 +1,8 @@
 import logo from "/images/logo.svg";
 
 export function Footer() {
-
   return (
-    <footer className="lg:text-auto flex flex-col items-center justify-start gap-16 rounded-tr-[6rem] bg-[#25252d] px-20 py-16 text-center text-white lg:flex-row lg:items-start lg:gap-[18%] lg:px-36 lg:text-left">
+    <footer className="lg:text-auto flex flex-col items-center justify-start gap-16 rounded-tr-[6rem] bg-[#25252d] px-20 py-16 text-center text-white lg:flex-row lg:items-start lg:gap-[18%] lg:px-32 lg:text-left">
       <img src={logo} alt="" />
       <div>
         <b>Product</b>
