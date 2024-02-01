@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Light-red: #ff525d;
+  --Very-light-red: #ff7a85;
+  --Very-dark-blue: #1f3f5b;
+  --Grayish-blue: #c8c8cb;
+  --Very-dark-grayish-blue: #4b5862;
+  --Very-dark-black-blue: #25252d;
+  --Very-light-red: #ff8f70;
+  --Light-red: #ff3d54;
+  --Very-dark-gray-blue: #2c2d3f;
+  --Very-dark-desaturated-blue: #3f4164;
+}
+
+.hero::before {
+  content: "";
+  @apply absolute z-[-2] h-full w-full opacity-60;
+  background-image: url("../images/bg-pattern-intro-mobile.svg");
+  background-position: 35% 35%;
+  background-repeat: no-repeat;
+}
+
+.section-2 {
+  background-image: url("../images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: 40rem;
+  background-position: 48% 270%;
+}
+
+@media screen and (min-width: 768px) {
+  .section-2 {
+    background-size: 65rem;
+    background-position: 48% 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero::before {
+    background-image: url("../images/bg-pattern-intro-desktop.svg");
+    background-position: -30rem center;
+  }
+
+  .section-2 {
+    background-size: 60rem;
+    background-position: -53% 80%;
+  }
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+img {
+  @apply select-none;
+}
+
+.hero {
+  @apply relative z-[-1] overflow-hidden;
+}
+
+footer li {
+  @apply cursor-pointer text-gray-300;
+}
+
+footer ul li:hover {
+  @apply underline;
+}
+
+/* * {
+  border: 1px solid red;
+} */
