@@ -10,10 +10,9 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Wrapper>
+      <Wrapper />
         <Header />
         <Hero />
-      </Wrapper>
       <FirstSection />
       <SecondSection />
       <ThirdSection />

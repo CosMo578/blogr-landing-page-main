@@ -23,7 +23,7 @@ body {
 
 .hero::before {
   content: "";
-  @apply absolute z-[-2] h-full w-full opacity-60;
+  @apply absolute z-[1] h-full w-full opacity-60;
   background-image: url("../images/bg-pattern-intro-mobile.svg");
   background-position: 35% 35%;
   background-repeat: no-repeat;
@@ -82,4 +82,8 @@ footer ul li:hover {
 
 /* * {
   border: 1px solid red;
+} */
+
+/* .dropdown p:hover + ul{
+    display: block;
 } */

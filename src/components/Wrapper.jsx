@@ -1,7 +1,6 @@
-export function Wrapper({ children }) {
+export function Wrapper() {
   return (
-    <div className="hero absolute top-0 left-0 right-0 -z-[99] h-[80vh] rounded-bl-[4rem] bg-[#ff525d] text-white">
-      {children}
+    <div className="hero h-[95vh] w-full rounded-bl-[4rem] bg-[#ff525d] text-white">
     </div>
   );
 }
