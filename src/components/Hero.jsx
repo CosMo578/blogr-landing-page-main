@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <main className="absolute left-0 right-0 top-0 z-[1] mt-[15vh] flex h-[80vh] flex-col items-center justify-center text-white">
+    <main className="absolute left-0 right-0 top-0 z-[1] mt-[15vh] flex h-[70vh] flex-col items-center justify-center text-white">
       <h1 className="mx-auto mb-4 w-[75%] text-center text-4xl lg:mb-6 lg:text-5xl">
         A modern publishing platform
       </h1>

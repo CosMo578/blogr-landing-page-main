@@ -55,11 +55,12 @@ body {
   }
 }
 
-button {
+button,
+footer li {
   @apply cursor-pointer;
-  font-family: "Ubuntu", sans-serif;
 }
 
+button,
 ul li {
   font-family: "Ubuntu", sans-serif;
 }
@@ -73,17 +74,44 @@ img {
 }
 
 footer li {
-  @apply cursor-pointer text-gray-300;
+  @apply text-gray-300;
 }
 
 footer ul li:hover {
   @apply underline;
 }
 
-/* * {
-  border: 1px solid red;
-} */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-/* .dropdown p:hover + ul{
-    display: block;
-} */
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.dropbtn:hover .dropdown-content  {
+  display: block;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
