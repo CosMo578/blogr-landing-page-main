@@ -1,4 +1,5 @@
-import illustrationLaptop from '/images/illustration-laptop-desktop.svg';
+import illustrationMobile from '/images/illustration-laptop-mobile.svg';
+import illustrationDesktop from '/images/illustration-laptop-desktop.svg';
 
 export function ThirdSection() {
   return (
@@ -6,11 +7,11 @@ export function ThirdSection() {
       <picture>
         <source
           media="(min-width: 1024px)"
-          srcSet={illustrationLaptop}
+          srcSet={illustrationDesktop}
         />
         <img
           className="mb-20 scale-[1.4] lg:h-[60vh] lg:w-auto lg:-translate-x-[19%] lg:scale-[1.6]"
-          src="/images/illustration-laptop-mobile.svg"
+          src={illustrationMobile}
           alt=""
         />
       </picture>

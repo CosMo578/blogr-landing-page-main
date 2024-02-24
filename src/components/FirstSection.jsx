@@ -1,4 +1,6 @@
-import editorPic from "/images/illustration-editor-mobile.svg"; 
+import editorMobile from "/images/illustration-editor-mobile.svg"; 
+import editorDesktop from "/images/illustration-editor-desktop.svg"; 
+
 
 export function FirstSection() {
   return (
@@ -32,14 +34,11 @@ export function FirstSection() {
             </p>
           </div>
         </div>
-        <img
-          className="w-full lg:hidden"
-          src={editorPic}
-        />
+        <img className="w-full lg:hidden" src={editorMobile} />
         <img
           className="-right-[12%] hidden w-auto lg:absolute lg:inline-block lg:h-full lg:scale-[1.2]"
           alt=""
-          src={"/images/illustration-editor-desktop.svg"}
+          src={editorDesktop}
         />
       </div>
     </section>
