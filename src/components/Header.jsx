@@ -8,8 +8,8 @@ export function Header() {
   };
 
   return (
-    <header className="absolute left-0 right-0 top-0 z-[2] h-[15vh] flex items-center justify-between px-8 py-10 text-white lg:justify-start lg:px-32 lg:py-6 ">
-      <img className="w-20" src="./images/logo.svg" alt="" />
+    <header className="absolute left-0 right-0 top-0 z-[2] flex h-[15vh] items-center justify-between px-8 py-10 text-white lg:justify-start lg:px-32 lg:py-6 ">
+      <img className="w-20" src="/images/logo.svg" alt="" />
 
       <nav
         className={`dropdown lg:ml-6 lg:flex lg:items-center lg:gap-8 hover:[&_button]:cursor-pointer ${
@@ -20,8 +20,8 @@ export function Header() {
           <p className="cursor-pointer hover:underline">
             Product{" "}
             <img
-              className={`inline-block transition-transform `}
-              src="./images/icon-arrow-light.svg"
+              className={`ml-1 inline-block rotate-180 transition-transform`}
+              src="/images/icon-arrow-light.svg"
               alt=""
             />
           </p>
@@ -39,8 +39,8 @@ export function Header() {
           <p className="cursor-pointer hover:underline">
             Company{" "}
             <img
-              className={`inline-block transition-transform `}
-              src="./images/icon-arrow-light.svg"
+              className={`ml-1 inline-block rotate-180 transition-transform`}
+              src="/images/icon-arrow-light.svg"
               alt=""
             />
           </p>
@@ -58,8 +58,8 @@ export function Header() {
           <p className="cursor-pointer hover:underline">
             Connect{" "}
             <img
-              className={`inline-block transition-transform `}
-              src="./images/icon-arrow-light.svg"
+              className={`ml-1 inline-block rotate-180 transition-transform`}
+              src="/images/icon-arrow-light.svg"
               alt=""
             />
           </p>
@@ -83,9 +83,7 @@ export function Header() {
       <button className="hover:cursor-pointer" onClick={toggleOpen}>
         <img
           className="w-full lg:hidden"
-          src={
-            isOpen ? "./images/icon-hamburger.svg" : "./images/icon-close.svg"
-          }
+          src={isOpen ? "/images/icon-hamburger.svg" : "/images/icon-close.svg"}
           alt=""
         />
       </button>

@@ -91,10 +91,12 @@ footer ul li:hover {
   position: absolute;
 }
 
-.dropbtn:hover .dropdown-content  {
+.dropbtn:hover .dropdown-content {
   display: block;
 }
-
+.dropbtn:hover p img {
+  @apply rotate-0;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

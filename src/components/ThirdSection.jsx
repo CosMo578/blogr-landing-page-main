@@ -4,11 +4,11 @@ export function ThirdSection() {
       <picture>
         <source
           media="(min-width: 1024px)"
-          srcSet="./images/illustration-laptop-desktop.svg"
+          srcSet="/images/illustration-laptop-desktop.svg"
         />
         <img
           className="mb-20 scale-[1.4] lg:h-[60vh] lg:w-auto lg:-translate-x-[19%] lg:scale-[1.6]"
-          src="./images/illustration-laptop-mobile.svg"
+          src="/images/illustration-laptop-mobile.svg"
           alt=""
         />
       </picture>
