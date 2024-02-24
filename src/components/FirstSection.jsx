@@ -1,3 +1,5 @@
+import editorPic from "/images/illustration-editor-mobile.svg"; 
+
 export function FirstSection() {
   return (
     <section className="overflow-x-hidden py-20 lg:mb-48 lg:mt-24">
@@ -32,7 +34,7 @@ export function FirstSection() {
         </div>
         <img
           className="w-full lg:hidden"
-          src="/images/illustration-editor-mobile.svg"
+          src={editorPic}
         />
         <img
           className="-right-[12%] hidden w-auto lg:absolute lg:inline-block lg:h-full lg:scale-[1.2]"

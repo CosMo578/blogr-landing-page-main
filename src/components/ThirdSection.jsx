@@ -1,10 +1,12 @@
+import illustrationLaptop from '/images/illustration-laptop-desktop.svg';
+
 export function ThirdSection() {
   return (
     <section className="mb-10 flex flex-col items-center justify-center px-3 py-12 text-center lg:mb-20 lg:mr-36 lg:mt-24 lg:flex-row lg:text-left">
       <picture>
         <source
           media="(min-width: 1024px)"
-          srcSet="/images/illustration-laptop-desktop.svg"
+          srcSet={illustrationLaptop}
         />
         <img
           className="mb-20 scale-[1.4] lg:h-[60vh] lg:w-auto lg:-translate-x-[19%] lg:scale-[1.6]"

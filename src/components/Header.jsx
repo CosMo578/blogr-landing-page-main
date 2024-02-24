@@ -1,4 +1,6 @@
 import { useState } from "react";
+import arrow from "/images/icon-arrow-light.svg";
+import logo from "/images/logo.svg";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +11,7 @@ export function Header() {
 
   return (
     <header className="absolute left-0 right-0 top-0 z-[2] flex h-[15vh] items-center justify-between px-8 py-10 text-white lg:justify-start lg:px-32 lg:py-6 ">
-      <img className="w-20" src="/images/logo.svg" alt="" />
+      <img className="w-20" src={logo} alt="" />
 
       <nav
         className={`dropdown lg:ml-6 lg:flex lg:items-center lg:gap-8 hover:[&_button]:cursor-pointer ${
@@ -21,7 +23,7 @@ export function Header() {
             Product{" "}
             <img
               className={`ml-1 inline-block rotate-180 transition-transform`}
-              src="/images/icon-arrow-light.svg"
+              src={arrow}
               alt=""
             />
           </p>
@@ -40,7 +42,7 @@ export function Header() {
             Company{" "}
             <img
               className={`ml-1 inline-block rotate-180 transition-transform`}
-              src="/images/icon-arrow-light.svg"
+              src={arrow}
               alt=""
             />
           </p>
@@ -59,7 +61,7 @@ export function Header() {
             Connect{" "}
             <img
               className={`ml-1 inline-block rotate-180 transition-transform`}
-              src="/images/icon-arrow-light.svg"
+              src={arrow}
               alt=""
             />
           </p>
