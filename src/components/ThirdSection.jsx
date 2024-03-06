@@ -1,14 +1,11 @@
-import illustrationMobile from '/images/illustration-laptop-mobile.svg';
-import illustrationDesktop from '/images/illustration-laptop-desktop.svg';
+import illustrationMobile from "/images/illustration-laptop-mobile.svg";
+import illustrationDesktop from "/images/illustration-laptop-desktop.svg";
 
 export function ThirdSection() {
   return (
-    <section className="mb-10 flex flex-col items-center justify-center px-3 py-12 text-center lg:mb-20 lg:mr-36 lg:mt-24 lg:flex-row lg:text-left">
+    <section className="mb-10 flex flex-col items-center justify-center px-3 py-12 text-center lg:mb-20 lg:mr-16 lg:mt-24 lg:flex-row lg:text-left xl:mr-32">
       <picture>
-        <source
-          media="(min-width: 1024px)"
-          srcSet={illustrationDesktop}
-        />
+        <source media="(min-width: 1024px)" srcSet={illustrationDesktop} />
         <img
           className="mb-20 scale-[1.4] lg:h-[60vh] lg:w-auto lg:-translate-x-[19%] lg:scale-[1.6]"
           src={illustrationMobile}

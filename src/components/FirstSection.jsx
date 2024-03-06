@@ -1,6 +1,5 @@
-import editorMobile from "/images/illustration-editor-mobile.svg"; 
-import editorDesktop from "/images/illustration-editor-desktop.svg"; 
-
+import editorMobile from "/images/illustration-editor-mobile.svg";
+import editorDesktop from "/images/illustration-editor-desktop.svg";
 
 export function FirstSection() {
   return (
@@ -8,8 +7,8 @@ export function FirstSection() {
       <h2 className="mb-20 text-center text-3xl font-semibold text-[#1f3f5b]">
         Designed for the future
       </h2>
-      <div className="flex w-full flex-col-reverse items-center justify-center gap-10 overflow-x-clip p-3 text-center lg:flex-row lg:justify-between lg:pl-36 lg:text-left">
-        <div className="text-[#1f3f5b] lg:w-[60%]">
+      <div className="flex w-full flex-col-reverse items-center justify-center gap-10 overflow-x-clip p-3 text-center lg:flex-row lg:justify-between lg:pl-16 lg:text-left xl:pl-32">
+        <div className="text-[#1f3f5b] lg:w-[50%] xl:w-[60%]">
           <div>
             <h3 className="mx-auto mb-4 w-2/3 text-2xl font-semibold lg:mx-0 lg:mb-6 lg:w-full">
               Introducing an extensible editor
@@ -36,7 +35,7 @@ export function FirstSection() {
         </div>
         <img className="w-full lg:hidden" src={editorMobile} />
         <img
-          className="-right-[12%] hidden w-auto lg:absolute lg:inline-block lg:h-full lg:scale-[1.2]"
+          className="-right-[12%] hidden w-auto lg:absolute lg:inline-block lg:h-full lg:scale-[1.0] xl:scale-[1.2]"
           alt=""
           src={editorDesktop}
         />

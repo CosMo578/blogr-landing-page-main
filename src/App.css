@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  /* border: 1px solid red; */
+}
+
 body {
   font-family: "Overpass", sans-serif;
 }
@@ -81,21 +85,23 @@ footer ul li:hover {
   @apply underline;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+@media screen and (min-width: 1024px) {
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+  }
 
-.dropbtn:hover .dropdown-content {
-  display: block;
-}
-.dropbtn:hover p img {
-  @apply rotate-0;
+  .dropbtn:hover .dropdown-content {
+    display: block;
+  }
+  .dropbtn:hover p img {
+    @apply rotate-0;
+  }
 }
 /* width */
 ::-webkit-scrollbar {
