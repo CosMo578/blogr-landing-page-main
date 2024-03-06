@@ -8,7 +8,7 @@ export default function MobileNav({ isOpen, arrowMobile }) {
 
   return (
     <nav
-      className={`absolute left-8 right-10 top-20 flex flex-col items-center rounded-lg bg-white p-8 text-[#1f3f5b] ${
+      className={`absolute left-8 right-10 top-24 flex flex-col items-center rounded-lg bg-white p-8 text-[#1f3f5b] ${
         isOpen === false ? "hidden" : "inline-block"
       }`}
     >
@@ -21,7 +21,9 @@ export default function MobileNav({ isOpen, arrowMobile }) {
         >
           Product{" "}
           <img
-            className={`ml-1 inline-block transition-transform ${isOpen1 ? 'rotate-180' : 'rotate-0'}`}
+            className={`ml-1 inline-block transition-transform ${
+              isOpen1 ? "rotate-180" : "rotate-0"
+            }`}
             src={arrowMobile}
             alt=""
           />
@@ -43,7 +45,9 @@ export default function MobileNav({ isOpen, arrowMobile }) {
         >
           Company{" "}
           <img
-            className={`ml-1 inline-block rotate-180 transition-transform ${isOpen2 ? 'rotate-180' : 'rotate-0'}`}
+            className={`ml-1 inline-block rotate-180 transition-transform ${
+              isOpen2 ? "rotate-180" : "rotate-0"
+            }`}
             src={arrowMobile}
             alt=""
           />
@@ -65,7 +69,9 @@ export default function MobileNav({ isOpen, arrowMobile }) {
         >
           Connect{" "}
           <img
-            className={`ml-1 inline-block rotate-180 transition-transform ${isOpen3 ? 'rotate-180' : 'rotate-0'}`}
+            className={`ml-1 inline-block rotate-180 transition-transform ${
+              isOpen3 ? "rotate-180" : "rotate-0"
+            }`}
             src={arrowMobile}
             alt=""
           />

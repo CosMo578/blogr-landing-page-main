@@ -1,6 +1,6 @@
 # Frontend Mentor - Blogr landing page solution
 
-This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -15,7 +15,6 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
 
 ## Overview
 
@@ -32,57 +31,53 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repo](https://github.com/CosMo578/blogr-landing-page-main)
+- Live Site URL: [Blogr Landing Page](https://blogr-landing-page-raph.vercel.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- Semantic JSX markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [Tailwind Css](https://tailwindcss.com/) - For styles
 - [React](https://reactjs.org/) - JS library
 
-
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- I implemented my very first custom react hook to renders components conditionally based on the viewport width.
 
-To see how you can add code snippets, see below:
+```jsx
+import { useState, useEffect } from "react";
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+export default function useWindowSize() {
+  const [windowSize, setWindowSize] = useState({ width: window.innerWidth });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({ width: window.innerWidth });
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return windowSize;
 }
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Gemini](https://gemini.google.com) - This AI helped me finally understand how to conditionally render components in react based on the viewport width. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
 - Website - [Developer Raph](https://raph-portfolio-v2.vercel.app)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [CosMo578](https://www.frontendmentor.io/profile/CosMo578)
 - Twitter - [Developer Raphael](https://www.twitter.com/@dev_raph_)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Google bard helped me in implementing the logic for my custom hook. I acknowledge the developers of the bard project.
