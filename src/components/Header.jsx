@@ -3,6 +3,8 @@ import useWindowSize from "../hooks/useWindowSize";
 import logo from "/images/logo.svg";
 import arrow from "/images/icon-arrow-light.svg";
 import arrowMobile from "/images/icon-arrow-dark.svg";
+import hamburger from "/images/icon-hamburger.svg";
+import close from "/images/icon-close.svg";
 import DesktopNav from "/src/components/DesktopNav";
 import MobileNav from "/src/components/MobileNav";
 
@@ -38,7 +40,7 @@ export function Header() {
         <img
           className="w-full lg:hidden"
           src={
-            !isOpen ? "/images/icon-hamburger.svg" : "/images/icon-close.svg"
+            !isOpen ? hamburger : close
           }
           alt=""
         />

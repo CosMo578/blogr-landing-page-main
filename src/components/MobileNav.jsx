@@ -45,7 +45,7 @@ export default function MobileNav({ isOpen, arrowMobile }) {
         >
           Company{" "}
           <img
-            className={`ml-1 inline-block rotate-180 transition-transform ${
+            className={`ml-1 inline-block transition-transform ${
               isOpen2 ? "rotate-180" : "rotate-0"
             }`}
             src={arrowMobile}
@@ -69,7 +69,7 @@ export default function MobileNav({ isOpen, arrowMobile }) {
         >
           Connect{" "}
           <img
-            className={`ml-1 inline-block rotate-180 transition-transform ${
+            className={`ml-1 inline-block transition-transform ${
               isOpen3 ? "rotate-180" : "rotate-0"
             }`}
             src={arrowMobile}
@@ -85,7 +85,7 @@ export default function MobileNav({ isOpen, arrowMobile }) {
 
       <div className="mt-6 flex w-full flex-col items-center border-t pt-6">
         <button className="mb-6 ml-0 font-bold">Login</button>
-        <button className="#ff525d rounded-full bg-[#ff7a85] bg-gradient-to-r px-8 py-3 font-bold text-white">
+        <button className="rounded-full bg-gradient-to-r from-[#fc9073] from-30% to-[#ff3d54] to-80% px-8 py-3 font-bold text-white hover:bg-[#ff7a85]">
           Sign Up
         </button>
       </div>
